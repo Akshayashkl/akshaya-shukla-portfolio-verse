@@ -44,11 +44,17 @@ const Hero = () => {
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 p-1">
-            <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-              <span className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                AS
-              </span>
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-black p-1 shadow-2xl">
+            <div className="w-full h-full rounded-full overflow-hidden bg-black">
+              <img 
+                src="/lovable-uploads/11bd37e6-1997-4fa1-a735-32c3b93e6f35.png"
+                alt="Akshaya Shukla"
+                className="w-full h-full object-cover rounded-full"
+                style={{
+                  filter: 'brightness(1.1) contrast(1.1)',
+                  background: 'black'
+                }}
+              />
             </div>
           </div>
         </div>

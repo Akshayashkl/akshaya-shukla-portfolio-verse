@@ -17,7 +17,6 @@ const Hero = () => {
   useEffect(() => {
     const typeText = () => {
       const currentSkill = skills[currentIndex];
-      
       if (charIndex < currentSkill.length) {
         setCurrentText(currentSkill.substring(0, charIndex + 1));
         setCharIndex(charIndex + 1);
@@ -45,10 +44,15 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 p-1">
-            <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-              <span className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                AS
-              </span>
+            <div className="w-full h-full rounded-full bg-black overflow-hidden flex items-center justify-center">
+              <img
+                src="https://i.postimg.cc/FFdfvnRn/PASSPORTSIZEPHOTO-2.jpg"
+                alt="Akshaya Shukla profile"
+                className="w-full h-full object-cover rounded-full"
+                style={{
+                  background: 'black'
+                }}
+              />
             </div>
           </div>
         </div>
